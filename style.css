@@ -1,0 +1,60 @@
+
+    body{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        min-height: 100vh;
+
+    }
+    .out{
+        position: relative;
+        background-color: chartreuse;
+        border-radius: 120px;
+    }
+    .clok{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background-color: rgb(76, 110, 110);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .clok span{
+        
+        
+        position: absolute;
+        transform: rotate(calc(30deg * var(--de) ));
+       text-align: center;
+        inset: 10px;
+        color: white;
+    }
+    .clok span b{
+        transform: rotate(calc(-30deg * var(--de) ));
+       display: inline-block;
+       font-size: 30px;
+    }
+    .clok::before{
+        content: '';
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        z-index: 1;
+        border-radius:50% ;
+    }
+
+    .han{
+        display: flex;
+        position: absolute;
+         align-items: flex-end;
+        justify-content: center;
+
+    }
+  .han i{
+    position: absolute;
+    width: 6px;
+    height: var(--ht);
+    background-color:var(--co);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+  }
+
